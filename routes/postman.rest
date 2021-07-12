@@ -1,0 +1,159 @@
+GET http://localhost:3000/userRouter
+
+### user
+GET http://localhost:3000/userRouter/user/60cb43486dfa2b28d443e3f5
+
+### user
+POST http://localhost:3000/userRouter/create
+Content-Type: application/json
+
+{
+    "name": "tahaL",
+    "email": "tahalllllll@gmail.com",
+    "password": "LLLLL"
+}
+
+### user
+DELETE http://localhost:3000/userRouter/delete/60cb43486dfa2b28d443e3f5
+
+### user
+
+PATCH  http://localhost:3000/userRouter/update/60cb41fd60530e0da45a7286
+Content-Type: application/json
+
+{
+    "name": "asad ullah siddiqui"
+}
+
+### admin ........................................
+GET http://localhost:3000/adminRouter
+
+
+### admin
+GET http://localhost:3000/adminRouter/user/60cb388c06a0ad1008ef2d26
+
+### admin
+POST http://localhost:3000/adminRouter/create
+Content-Type: application/json
+
+{
+    "name": "xxxx",
+    "email": "assad@gmail.com",
+    "password": "1234"
+}
+
+### admin
+DELETE http://localhost:3000/adminRouter/delete/60cb51ccf79c3f2b54370849
+
+### admin
+
+PATCH  http://localhost:3000/adminRouter/update/60cb497ac6c6502620d32293
+Content-Type: application/json
+
+{
+    "name": "asadkkk"
+}
+
+### category .....................................
+GET http://localhost:3000/categoryRouter
+
+
+### category
+GET http://localhost:3000/categoryRouter/category/60cb52d0dddd4423dca9b840
+
+### category
+POST http://localhost:3000/categoryRouter/create
+Content-Type: application/json
+
+{
+    "name": "xxxx",
+    "img": "assad@gmail.com"
+}
+
+### category
+DELETE http://localhost:3000/categoryRouter/delete/60cb5298dddd4423dca9b838
+
+### category
+
+PATCH  http://localhost:3000/categoryRouter/update/60cb5298dddd4423dca9b838
+Content-Type: application/json
+
+{
+    "name": "asadkkk"
+}
+
+
+### product ......................................
+GET http://localhost:3000/productRouter
+
+
+### product
+GET http://localhost:3000/productRouter/product/60cb6dd79b2e482b603972fe
+
+### product
+POST http://localhost:3000/productRouter/create
+Content-Type: application/json
+
+{
+        "name":"p1",
+        "img":"req.body.img",
+        "categoryId":"req.body.categoryId",
+        "quantity":33,
+        "price":10,
+        "brandName":"req.body.brandName",
+        "discription":"req.body.discription",
+        "discount":10
+}
+
+### product
+DELETE http://localhost:3000/productRouter/delete/60cb6dd79b2e482b603972fe
+
+### product
+
+PATCH  http://localhost:3000/productRouter/update/60cb6dd79b2e482b603972fe
+Content-Type: application/json
+
+{
+    "name": "asadkkk"
+}
+
+
+### order...................................
+
+GET http://localhost:3000/orderRouter
+
+
+### order
+GET http://localhost:3000/orderRouter/order/60cb80be32b63f15bc8362ef
+
+### order
+POST http://localhost:3000/orderRouter/create
+Content-Type: application/json
+
+{
+        "userId":"1234",
+        "productIdArray":["a","b","c"],
+        "productQuantityArray":[1,2,3],
+        "productNameArray":["a","b","c"],
+        "totalPrice":123,
+        "totalDiscount":10,
+        "delevedStatus":"deleved",
+        "phoneNo":"1234567",
+        "address":"dk3431",
+        "city":"isb",
+        "postalCode":"123",
+        "ApartmentNo":"1234"
+}
+
+### order
+DELETE http://localhost:3000/orderRouter/delete/60cb80be32b63f15bc8362ef
+
+### order
+
+PATCH  http://localhost:3000/orderRouter/update/60cb80be32b63f15bc8362ef
+Content-Type: application/json
+
+{
+    "delevedStatus":"pending"
+}
+
